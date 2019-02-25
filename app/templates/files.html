@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block main %}  
+<div> 
+  <ul> 
+  {% for pics in images %}
+    <li>
+        <img src="{{ pics }}"></img>
+    </li>  
+    {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}
